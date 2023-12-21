@@ -1,0 +1,51 @@
+#Hi{ /* we menytyioned p here means wheverever there is p i.e. p of prargraph too, it will have the below properties in the HTML file */
+    font-size: 18px;
+    color: red;
+    
+}
+h2{
+    font-size: 25px;
+    color: blue;
+}
+span{
+    text-transform: uppercase; /*It will transform the whole text into uppercase or capital letters*/
+    display: block; /*this is used to go to next line, we can use <br> in html too for this*/
+    color: yellowgreen; /*the color at bottom i.e. the latest coded color wwill be put and old color will be replaced*/
+    color: blue;
+}
+#Hello{
+    font-size: 25px;
+    background-color: gray;
+    text-decoration: underline;
+}
+/*now understand one thing, let say we have  line p, and we have something 
+with <p id=*anything*, the one with id and one with non id both belongs to p, which means
+p is the parent of all, so if i make a code as
+p{
+ color: red !important;   
+} then no matter what you change in p or p id=...
+the color of all p will remain same*/
+/*p{
+    color: black !important;*//*i commented this because it will cause overiding in other codes
+}*/
+#Hey{
+    color:blue
+} /*all text will be changed to black no matter what you change in p id=...*/
+/*if we wish to change the properties i.e. customize things of multiple lines/ things then we can do as follows*/
+#A ,#B, #C{
+    color:darkblue;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial;
+}
+#main-content #sub-content p{
+    color: darkgoldenrod;
+}
+/*if we want to customiz only main content then we can use the following*/
+#main-content > p{
+    color: blueviolet;
+}
+/*we can change the whole body of the fill by typing 
+body{
+rest of code
+}*/
