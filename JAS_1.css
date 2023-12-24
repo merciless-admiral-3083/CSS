@@ -1,4 +1,4 @@
-#Hi{ /* we menytyioned p here means wheverever there is p i.e. p of prargraph too, it will have the below properties in the HTML file */
+#Hi{ /* we mentioned p here means wheverever there is p i.e. p of paragraph too, it will have the below properties in the HTML file */
     font-size: 18px;
     color: red;
     
@@ -45,8 +45,53 @@ the color of all p will remain same*/
 #main-content > p{
     color: blueviolet;
 }
+#all-articles h2 + p{ /*by + sign we can color h2 and the p text JUST BELOW h2*/
+    color: green;
+}
+span[class]{ /*by this we can customize all class=... elemets all at once*/
+    color: blueviolet;
+}
+div[id]{ /*same reason as above*/
+    background: grey;
+}
+a[title="Google"]{
+    color: slateblue;
+}
+a[href="https"]{
+    color: cornflowerblue;
+}
+a:hover{ /*by the help of this whenever we hover over a link which lies inside 'a' the link will change color*/
+    color: red;
+}
+a:active{ /*it ill be the colro when we havent visited the link yet*/
+    color: orange;
+}
+a:visited{ /*this will be the link when we have visited the link atleast once*/
+    color: orangered;
+}
+article p:first-child{ /*this customization will apply to both articles!*/
+    /*first line of article is known as first child i.e. first line, last child is last line*/
+    font-weight: bold;
+}
+article p:last-child{
+    color: red;
+}
+article p:nth-child(2), article p:nth-child(4){
+    font-weight: bold;
+}
+li:nth-child(even){
+    font-weight: bold;
+}
+li:nth-child(odd){
+    color: red;
+}
+article:nth-of-type(1){ /*this will customize only the first article*/
+    background: grey;
+}
+article:nth-of-type(odd){
+    background: grey;
+}
 /*we can change the whole body of the fill by typing 
 body{
 rest of code
 }*/
-/*this text is written by me on github website haha*/
