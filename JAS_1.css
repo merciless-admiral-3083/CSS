@@ -1,4 +1,4 @@
-#Hi{ /* we mentioned p here means wheverever there is p i.e. p of paragraph too, it will have the below properties in the HTML file */
+#Hi{ /* we menytyioned p here means wheverever there is p i.e. p of prargraph too, it will have the below properties in the HTML file */
     font-size: 18px;
     color: red;
     
@@ -67,7 +67,7 @@ a:active{ /*it ill be the colro when we havent visited the link yet*/
     color: orange;
 }
 a:visited{ /*this will be the link when we have visited the link atleast once*/
-    color: orangered;
+    color:blueviolet;
 }
 article p:first-child{ /*this customization will apply to both articles!*/
     /*first line of article is known as first child i.e. first line, last child is last line*/
@@ -91,7 +91,18 @@ article:nth-of-type(1){ /*this will customize only the first article*/
 article:nth-of-type(odd){
     background: grey;
 }
-/*we can change the whole body of the fill by typing 
-body{
+*{/* *{} is used to provide this particular code to ALL elemets like a, articlle, p, li, div etc etc*/
+    background: url(http://127.0.0.1:5500/Image/Skull.jpg);/*when you run the 'go live' then open the image you will get a link at top, copy that link and paste here to make img as background*/
+    background-position: center; /*this will align the image to the centre*/
+    margin: 0;/*this helps align image properly to background*/
+    /*padding: 0;*//*padding is used to put EVERYTHING  to the very left and it will REMOVE BULLETS and bullet's text will be sticked to left*/
+    background-size: cover; /*this will cover the image properly to the background*/
+    background-attachment: fixed;/*this will not split image in each element like half image at article, half image at p etc*/   
+    }
+#Jassi{ 
+    text-decoration: overline; /*we can use tet decor for better looks*/
+}
+
+/*we can change the whole body of the fill by typing body{
 rest of code
 }*/
