@@ -50,7 +50,7 @@ the color of all p will remain same*/
 }
 span[class]{ /*by this we can customize all class=... elemets all at once*/
     color: blueviolet;
-}
+} 
 div[id]{ /*same reason as above*/
     background: grey;
 }
@@ -63,12 +63,14 @@ a[href="https"]{
 a:hover{ /*by the help of this whenever we hover over a link which lies inside 'a' the link will change color*/
     color: red;
 }
-a:active{ /*it ill be the colro when we havent visited the link yet*/
+/*i commented the below because they were overiding new commands*/
+/*
+a:active{ it ill be the colro when we havent visited the link yet
     color: orange;
 }
-a:visited{ /*this will be the link when we have visited the link atleast once*/
+a:visited{ this will be the link when we have visited the link atleast once
     color:blueviolet;
-}
+}*/
 article p:first-child{ /*this customization will apply to both articles!*/
     /*first line of article is known as first child i.e. first line, last child is last line*/
     font-weight: bold;
@@ -91,18 +93,155 @@ article:nth-of-type(1){ /*this will customize only the first article*/
 article:nth-of-type(odd){
     background: grey;
 }
-*{/* *{} is used to provide this particular code to ALL elemets like a, articlle, p, li, div etc etc*/
-    background: url(http://127.0.0.1:5500/Image/Skull.jpg);/*when you run the 'go live' then open the image you will get a link at top, copy that link and paste here to make img as background*/
-    background-position: center; /*this will align the image to the centre*/
-    margin: 0;/*this helps align image properly to background*/
-    /*padding: 0;*//*padding is used to put EVERYTHING  to the very left and it will REMOVE BULLETS and bullet's text will be sticked to left*/
-    background-size: cover; /*this will cover the image properly to the background*/
-    background-attachment: fixed;/*this will not split image in each element like half image at article, half image at p etc*/   
-    }
+/*i commented this because it is not used often when learning*/
+/* *{ *{} is used to provide this particular code to ALL elemets like a, articlle, p, li, div etc etc
+    background: url(http://127.0.0.1:5500/Image/Skull.jpg);when you run the 'go live' then open the image you will get a link at top, copy that link and paste here to make img as background
+    background-position: center; this will align the image to the centre
+    margin: 0;this helps align image properly to background
+    padding: 0;padding when initially at 0 is used to put EVERYTHING  to the very left and it will REMOVE BULLETS and bullet's text will be sticked to left
+    background-size: cover; this will cover the image properly to the background
+    background-attachment: fixed;this will not split image in each element like half image at article, half image at p etc
+    } */ 
 #Jassi{ 
     text-decoration: overline; /*we can use tet decor for better looks*/
 }
+#SuperChess:hover{
+    color: magenta;
+    text-decoration: underline;
+    background-color: rgb(232, 255, 127);
+}
+#welcome{
+    letter-spacing:inherit;
+    margin-bottom: 32;
+    font-size: 100px;
+    color: red;
+    background-color:rgb(30, 210, 39);
+}
+*{
+    background: #fff;
+    width: 1200px;
+    margin: 0 auto;
+    height: 200;
+   }
+.box { /*you need to mention units for things to take effect*/
+    margin: 20px /*auto*/; /* auto generally helps us position things acc to size we see webpage in */
+    padding: 20px;
+    border: 1px solid #000;
+    width: 200px;
+    height: 50px;
+    /*margin-top: 15px;*/ /*like this w can set padding as well as margin in different dirn as per our requirements*/
+    display: inline-block;
+    background-color: white;
+}
+.dashed{ /*ALL THESE ARE DIFFERNT TYPES OF BORDERS*/
+    border: 1px blue dashed;
+}
+.double{
+    border: 1px blue double;
+}
+.insert{
+    border: 1px blue inset;
+}
+.dotted{
+    border: 1px blue dotted;
+}
+.groove{
+    border: 1px blue groove;
+}
+.outset{
+    border: 1px blue outset;
+}
+.ridge{
+    border: 1px blue ridge;
+}
+.solid{
+    border: 1px blue solid;
+}
+.static-width{
+    width: 300px;
+    height: 100px;
+}
+.percentage-width{
+    width: 70%;
+    height: 50px;
+}
+.inline-block{
+    width: 40%;
+    display: inline-block;
+}
+.rounded-border{
+    width: 300px;
+    height: 100px;
+    border-radius: 30px; /*this is used to make our borders curved*/
+}
+.border-width{
+    width: 300px;
+    height: 100px;
+    border-radius: 5px 10px 20px 40px; /*5, 10 20 40 will be radius of border in diff dirn like 5 px in top etc*/
+}
+/*#circle{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background:rgb(200, 200, 100);
+    border-radius: 200px;
+    top: auto;
+    bottom: 50px;
+    left: 50px;
+    opacity: 1;
+    text-align: center;
+}
+#circle-2{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background:rgb(200, 200, 100);
+    border-radius: 200px;
+    top: auto;
+    bottom: 150px;
+    left: 150px;
+    opacity: 0.3;
+    text-align: center;
+}
+#circle-3{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background:rgba(200, 200, 100,0.1);
+    border-radius: 200px;
+    top: auto;
+    bottom: ;
+    left: 250px;
+    opacity: 0.3;
+    text-align: center;
+}*/ /*this creates circles, the issue was it was coming over other texts so i commented this*/
 
+.button{
+    display: block;
+    width: 100px;
+    padding: 12px;
+    border: 1px solid #77aaaa;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+    background: #aadddd;
+    background: -moz-linear-gradient(top, #aadddd 0%, #77aaaa 100%);
+    background: -webkit-linear-gradient(top, #aadddd 0%, #77aaaa 100%);
+    background: linear-gradient(top, #aadddd 0%, #77aaaa 100%);
+    box-shadow: 2px 2px 4px 2px rgba(40, 40, 40, 0.6);
+
+}
+.button:hover{
+    background: #77aaaa;
+    background: -moz-linear-gradient(bottom, #aadddd 0%, #77aaaa 100%);
+    background: -webkit-linear-gradient(bottom, #aadddd 0%, #77aaaa 100%);
+    background: linear-gradient(top, #aadddd 0%, #77aaaa 100%);
+    box-shadow: 2px 2px 4px 2px rgba(40, 40, 40, 0.6);
+}
 /*we can change the whole body of the fill by typing body{
 rest of code
 }*/
